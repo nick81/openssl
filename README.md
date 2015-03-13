@@ -3,4 +3,6 @@ openssl
 
 Debian based image with openssl for ssl certificate generation.
 
-Usage `docker run --rm  -e COMMON_NAME=<Common Name> -e KEY_NAME=<Cert File Names Prefix> -v /var/certs:/certs centurylink/openssl`
+Usage:
+
+alias openssl='docker run --rm -it -v $(pwd):/app nick81/openssl'
